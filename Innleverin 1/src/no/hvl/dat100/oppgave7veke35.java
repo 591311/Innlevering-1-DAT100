@@ -24,13 +24,10 @@ public class oppgave7veke35 {
 			showMessageDialog(null, "Din poengsum er: " + poengsum + " dette tilsvarer karakter E");
 		} else if (poengsum < 40 && poengsum >= 0) {
 			showMessageDialog(null, "Din poengsum er: " + poengsum + " dette tilsvarer karakter F");
-		} else if (poengsum > 100) {
-			showMessageDialog(null, "Feilmelding: Poengsummen din er ugyldig, tallet må være mellom 0-100");
-			showInputDialog("Tast inn ny poengsum ");
-		} else if (poengsum < 0) {
-			showMessageDialog(null, "Feilmelding: Poengsummen din er ugyldig, tallet må være mellom 0-100");
-			showInputDialog("Tast inn ny poengsum ");
-		}
+		} else if (poengsum > 100 || poengsum < 0) {
+			showMessageDialog(null, "Feilmelding: Poengsummen din er ugyldig, tallet må være mellom 0-100, prøv på nytt");
+			i--;
+		} 
 		
 	}
 	}
